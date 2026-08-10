@@ -12,7 +12,6 @@ Ahora trabajo en:
 - Fluxaria Tech SL: Head of Innovation - Founder
 - Axium Lab SL: CTO - Founder
 
-#
 
 Proyectos que mantengo open-source:
 - [LLM-mock](https://github.com/axium-lab/llm-mock/): Un API-REST para los test de integración que soporta los SDK de los principales proveedores.

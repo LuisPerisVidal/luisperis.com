@@ -5,8 +5,7 @@ permalink: /contacto/
 description: "Cómo contactar conmigo."
 ---
 
-Si quieres comentarme algo sobre cualquier artículo, escríbeme a
-[luis.peris@kaira.es(mailto:luis.peris@kaira.es).
+Si quieres comentarme algo sobre cualquier artículo, escríbeme a luis.peris[arroba]kaira.es
 
 También puedes suscribirte por [RSS](/feed.xml).
 
