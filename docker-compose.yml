@@ -1,0 +1,27 @@
+name: luisperis
+
+services:
+  web:
+    image: ruby:3.3
+    container_name: luisperis-dev
+    working_dir: /site
+    # Las gemas viven en un volumen, no en vendor/: así el bind mount de
+    # macOS no las ralentiza y sobreviven a un borrado del directorio.
+    environment:
+      BUNDLE_PATH: /bundle
+    volumes:
+      - .:/site
+      - bundle:/bundle
+    ports:
+      - "4000:4000"     # el sitio
+      - "35729:35729"   # livereload
+    # `gem install bundler` fija la versión que declara Gemfile.lock; la
+    # imagen trae otra y bundler se negaría a continuar.
+    command: >
+      sh -c "gem install bundler:2.5.22 --no-document &&
+             bundle install &&
+             bundle exec jekyll serve --host 0.0.0.0 --port 4000
+                   --livereload --livereload-port 35729"
+
+volumes:
+  bundle:

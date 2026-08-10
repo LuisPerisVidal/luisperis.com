@@ -5,24 +5,23 @@ permalink: /sobre-mi/
 description: "Quién soy y de qué va este blog."
 ---
 
-Me llamo Luis Peris y soy programador. Llevo más de diez años trabajando en
-proyectos técnicos: startups, desarrollo a medida, rendimiento de aplicaciones
-y sistemas. En 2022 vendí la consultora que había montado.
+Me llamo Luis Peris y soy programador. Llevo +20 años trabajando como desarrollador (me gusta decir que de alto rendimiento ^^). En 2022 vendí la consultora que había montado.
 
-Este sitio es el archivo de lo que fui escribiendo entre 2015 y 2020: notas
-sobre programación, infraestructura, rendimiento y la parte de negocio que
-rodea al trabajo técnico. Algunos artículos han envejecido bien y otros son
-un retrato de su época; los dejo tal cual, con su fecha delante.
+Ahora trabajo en:
+
+- Fluxaria Tech SL: Head of Innovation - Founder
+- Axium Lab SL: CTO - Founder
+
+#
+
+Proyectos que mantengo open-source:
+- [LLM-mock](https://github.com/axium-lab/llm-mock/): Un API-REST para los test de integración que soporta los SDK de los principales proveedores.
+
 
 ## Qué encontrarás aquí
 
-- Programación y arquitectura de aplicaciones web
-- Rendimiento, servidores y administración de sistemas
-- El oficio: presupuestos, clientes, precios, montar y vender una empresa
-- Algún episodio suelto del podcast *Consultor IT*
+Artículos sobre programación y los retos a los que me enfrento en mi día a día, como por ejemplo, cambios de SDK de los principales proveedores de AI, edge-cases, etc.
 
 ## Sobre este sitio
 
-Estático, generado con [Jekyll](https://jekyllrb.com) y alojado en GitHub
-Pages. Sin cookies, sin analítica, sin JavaScript. Puedes suscribirte por
-[RSS](/feed.xml).
+Es open-source, puedes acceder al código en [github Pages](https://github.com/LuisPerisVidal/luisperis.com). Sin cookies, sin analítica, sin JavaScript. Puedes suscribirte por [RSS](/feed.xml).

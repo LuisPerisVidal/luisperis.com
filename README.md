@@ -14,8 +14,11 @@ El sitio queda en <http://localhost:4000>.
 
 Si no quieres instalar Ruby, con Docker:
 
-    docker run --rm -v "$PWD":/site -w /site -p 4000:4000 ruby:3.3-slim \
-      sh -c "bundle install && bundle exec jekyll serve --host 0.0.0.0"
+    docker compose up
+
+La primera vez tarda un par de minutos en instalar las gemas; después
+arranca en segundos porque quedan cacheadas en el volumen `luisperis_bundle`.
+Para pararlo, `docker compose down`.
 
 ## Publicar
 
