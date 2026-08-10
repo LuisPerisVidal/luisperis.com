@@ -1,0 +1,25 @@
+---
+layout: page
+title: Categorías
+permalink: /categorias/
+description: "Índice de artículos agrupados por categoría."
+---
+
+<ul class="cat-list">
+  {% assign cats = site.categories | sort %}
+  {% for cat in cats %}
+  <li>
+    <a href="{{ cat[0] | slugify: 'latin' | prepend: '/categoria/' | append: '/' | relative_url }}">{{ cat[0] }}</a>
+    <span class="count">{{ cat[1].size }}</span>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2 id="etiquetas">Etiquetas</h2>
+
+<ul class="tag-cloud">
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %}
+  <li><a href="{{ '/etiquetas/' | relative_url }}#{{ tag[0] | slugify: 'latin' }}">{{ tag[0] }}</a> <span class="count">{{ tag[1].size }}</span></li>
+  {% endfor %}
+</ul>

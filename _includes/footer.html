@@ -1,0 +1,13 @@
+<footer class="foot">
+  <hr class="rule">
+  <p>
+    {{ site.posts.size }} artículos ·
+    <a href="{{ '/archivo/' | relative_url }}">archivo</a> ·
+    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    {%- comment %} En Liquid la cadena vacía es verdadera: hay que mirar su longitud. {% endcomment -%}
+    {%- if site.social.github.size > 0 %} · <a href="https://github.com/{{ site.social.github }}" rel="me">GitHub</a>{% endif %}
+    {%- if site.social.linkedin.size > 0 %} · <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" rel="me">LinkedIn</a>{% endif %}
+    {%- if site.social.mastodon.size > 0 %} · <a href="{{ site.social.mastodon }}" rel="me">Mastodon</a>{% endif %}
+  </p>
+  <p>© {{ site.time | date: "%Y" }} {{ site.author }}. Sin cookies, sin rastreo, sin JavaScript.</p>
+</footer>

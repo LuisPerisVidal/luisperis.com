@@ -1,0 +1,8 @@
+{%- comment -%}
+Fecha larga en español. Jekyll formatea los meses en inglés, así que los
+traducimos con una tabla.
+Parámetro: include.date
+{%- endcomment -%}
+{%- assign meses = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," -%}
+{%- assign indice = include.date | date: "%m" | plus: 0 | minus: 1 -%}
+{{ include.date | date: "%-d" }} de {{ meses[indice] }} de {{ include.date | date: "%Y" }}

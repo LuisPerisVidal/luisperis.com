@@ -1,0 +1,12 @@
+{%- comment -%}
+Listado de artículos en formato "ls -l": fecha + título.
+Parámetro: include.posts
+{%- endcomment -%}
+<ul class="listing">
+  {%- for post in include.posts %}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {%- endfor %}
+</ul>

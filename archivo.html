@@ -1,0 +1,14 @@
+---
+layout: page
+title: Archivo
+permalink: /archivo/
+description: "Todos los artículos publicados, ordenados por año."
+---
+
+<p class="dim">{{ site.posts.size }} artículos, del más reciente al más antiguo.</p>
+
+{% assign anios = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% for anio in anios %}
+  <h2 class="year" id="{{ anio.name }}">{{ anio.name }} <span class="count">{{ anio.items.size }}</span></h2>
+  {% include post-list.html posts=anio.items %}
+{% endfor %}

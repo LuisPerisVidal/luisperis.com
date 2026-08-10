@@ -1,0 +1,60 @@
+title: "Luis Peris"
+tagline: "Notas sobre desarrollo, sistemas y negocio técnico"
+description: >-
+  Blog de Luis Peris: artículos sobre programación, rendimiento de
+  aplicaciones, sistemas y el negocio de la tecnología.
+author: "Luis Peris"
+email: "luis.peris@fluxaria.com"
+url: "https://luisperis.com"
+baseurl: ""
+lang: es
+
+# Enlaces del pie. Rellena el usuario y aparecerán; en blanco se ocultan.
+social:
+  github: ""      # usuario, p. ej. luisperis
+  linkedin: ""    # identificador del perfil
+  mastodon: ""    # URL completa
+
+# Los posts conservan las URLs de WordPress mediante `permalink` en su
+# front matter. Este patrón es solo el de reserva.
+permalink: /:slug/
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: /feed.xml
+  posts_limit: 30
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+# Cuántos artículos se listan en la portada.
+home_posts: 15
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github

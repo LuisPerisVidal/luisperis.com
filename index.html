@@ -1,0 +1,15 @@
+---
+layout: page
+title: Inicio
+hide_title: true
+description: "Artículos sobre programación, rendimiento de aplicaciones, sistemas y el negocio de la tecnología."
+---
+
+<h2>Últimos artículos</h2>
+
+{% assign recientes = site.posts | slice: 0, site.home_posts %}
+{% include post-list.html posts=recientes %}
+
+<p>
+  <a href="{{ '/archivo/' | relative_url }}">Ver los {{ site.posts.size }} artículos →</a>
+</p>

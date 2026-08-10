@@ -1,0 +1,14 @@
+---
+layout: page
+title: Etiquetas
+permalink: /etiquetas/
+description: "Todos los artículos agrupados por etiqueta."
+---
+
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+  {% assign nombre = tag[0] %}
+  {% assign entradas = tag[1] %}
+  <h2 class="year" id="{{ nombre | slugify: 'latin' }}">{{ nombre }} <span class="count">{{ entradas.size }}</span></h2>
+  {% include post-list.html posts=entradas %}
+{% endfor %}

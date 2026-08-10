@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="page">
+  <h1>{{ page.title }}</h1>
+
+  {%- assign posts = site.categories[page.category] %}
+  <p class="dim">{{ posts.size }} artículos en esta categoría.</p>
+
+  {%- if page.content != "" %}
+  <div class="prose">{{ content }}</div>
+  {%- endif %}
+
+  {% include post-list.html posts=posts %}
+
+  <p><a href="{{ '/categorias/' | relative_url }}">Todas las categorías →</a></p>
+</article>
