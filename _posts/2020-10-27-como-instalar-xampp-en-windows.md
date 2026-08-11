@@ -80,7 +80,7 @@ Simplemente tendremos que abrir el programa XAMPP (el icono es naranja) y una ve
 
 Al final nos tendría que salir algo similar a esta captura:
 
-![XAMPP windows](https://luisperis.com/wp-content/uploads/2020/10/001-xampp-windows.png)
+![XAMPP windows](/assets/img/2020/001-xampp-windows.png)
 
 No es necesario activar el ProFTPD.
 

@@ -21,7 +21,7 @@ Es por ello que cuando hacemos una petición a una página web, realmente le est
 
 De hecho, las IPs se pueden geolocalizar e indicar uno de los nodos más cercanos a nuestra casa. En mi caso (que vivo en Terrassa), se encuentra aquí:
 
-![¿Qué es la IP?](https://luisperis.com/wp-content/uploads/2020/11/que-es-ip.png)
+![¿Qué es la IP?](/assets/img/2020/que-es-ip.png)
 
 Pero, la IP no únicamente sirve cómo ‘dirección’, esto es algo secundario. Lo importante que tenemos que entender es que la IP es como un DNI, es decir, identifica de forma clara e inequívoca un dispositivo que tiene acceso a una red (ya sea red local o red de redes como es internet).
 

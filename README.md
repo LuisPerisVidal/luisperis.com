@@ -32,7 +32,18 @@ CNAME de `www` hacia `<usuario>.github.io`.
 
 ## Escribir un artículo
 
-Crea `_posts/AAAA-MM-DD-titulo.md`:
+La forma más rápida es el script `new-post.sh`:
+
+    ./new-post.sh
+    ./new-post.sh "Título del artículo"
+
+Pide el título (si no lo pasas por argumento), una descripción opcional y la
+categoría. Genera el fichero en `_posts/AAAA-MM-DD-slug.md` con el front
+matter listo, la fecha actual y un slug sin acentos (p. ej. `¿Qué es…?` →
+`que-es…`). Si tienes `$EDITOR` definido, al final pregunta si quieres
+abrirlo.
+
+También puedes crearlo a mano:
 
 ```markdown
 ---
@@ -70,6 +81,7 @@ permalink: /categoria/nombre-de-la-categoria/
     _includes/            head, header, footer, post-list, fecha
     _posts/               los 103 artículos migrados
     categoria/            una página índice por categoría
+    new-post.sh           crea un borrador en _posts/
     assets/css/main.css   hoja de estilo única
     assets/fonts/         Crimson Pro y DM Sans (variables, 184 KB)
     assets/img/           imágenes de los artículos, por año
