@@ -1,24 +1,24 @@
 ---
 layout: post
-title: "Wordpress a Github Pages (Jekyll)"
+title: "Migrar Wordpress a Github Pages (Jekyll)"
 date: 2026-08-11 10:14:18 +0200
-permalink: /wordpress-a-github-pages-jekyll/
+permalink: /migrar-wordpress-a-github-pages-jekyll/
 description: "En este artículo veremos como migrar de Wordpress a Jekyll y con que ventajas nos encontaremos"
 categories: ["Rendimiento y Aplicaciones"]
 ---
 
-Hace ya 5 años que no escribo un artículo y hacía bastante tiempo que me apetecía volver a escribir, en esta ocasión artículos 'más sesudos', con más peso, más investigación...
+Hace ya 5 años que no escribo un artículo y hacía bastante tiempo que me apetecía volver a escribir, en esta ocasión artículos mucho más técnicos...
 
-En los últimos años he estado investigando mucho, muchísimo, he estado profundizando en muchos campos de AI (como conversor de llamadas openAI to Gemini) y me gustaría poderlo compartir, para que si alguien se encuentra en un futuro con el problema que ya resolví, pueda hacer uso de mi solución sin perder tiempo :-)
+En los últimos años he estado investigando mucho, muchísimo, he estado profundizando en muchos campos de AI (como conversor de llamadas openAI to Gemini) y me gustaría poderlo compartir ese conocimiento, para que si alguien se encuentra en un futuro con el problema que ya resolví, pueda hacer uso de mi solución sin perder tiempo :-)
 
 ## Pero ¿Por qué pasar de Wordpress a Jekyll?
 
 Simple: Se adapta a mis valores, tiene menor fricción al escribir y es mucho más seguro.
 
-Mi primer artículo es de hace 9 años, durante estos 9 años he cambiado el alojamiento bastantes veces, servidores, VPS, hostings (piensasolutions, OVH, etc). No quiero perder el tiempo con migraciones, ni con actualizaciones de wordpress, ni con actualizaciones de plugins que han sido vulnerados... solamente quiero escribir y punto. Y esto es lo que me ofrece Jekyll/github.
+Mi primer artículo es de hace 11 años, durante estos 11 años he cambiado el alojamiento bastantes veces, servidores, VPS, hostings (piensasolutions, OVH, etc). No quiero perder el tiempo con migraciones, ni con actualizaciones de wordpress, ni con actualizaciones de plugins que han sido vulnerados... solamente quiero escribir y punto. Y esto es lo que me ofrece Jekyll/github.
 
 ### ¿Qué es Jekyll?
-Jekyll es generador de webs estáticas con capacidad de blog, es decir metes todos los artículos que escribas  en formato .md en una carpeta llamada "posts", y cuando le das al 'build', automáticamente te crea los menús (con plantillas similares a mustache), los artículos, el paginado, los tags/categorías.
+Jekyll es un generador de webs estáticas con capacidad de blog, es decir metes todos los artículos que escribas en formato .md en una carpeta llamada "posts", y cuando le das al 'build', automáticamente te crea los menús (con plantillas similares a mustache), los artículos, el paginado, los tags/categorías.
 
 TODO YA PROCESADO: Sin base de datos, sin lenguajes de backend, sin necesidad de javascript en el frontend.
 
@@ -46,7 +46,7 @@ Si has observado bien te habrás dado cuenta de que ahora, cada vez que quiera e
 
 ### ¿Y cómo hice la migración?
 
-Seguro que hay guías mucho mejores que esta, de hecho, esta fue la parte que menos cariño le puse, yo lo hice de la siguiente forma:
+Seguro que hay guías mucho mejores que esta, de hecho, esta fue la parte que menos cariño le puse, lo hice de la siguiente forma:
 
 1. Le pedí a claude que creara un .md con todas las URLs de mi blog basado en el sitemap.xml
 2. Eliminé los artículos/pages que no me interesaban migrar
